@@ -1,0 +1,52 @@
+[
+        {
+            "id": 1,
+            "title": "Spy x Family S1",
+            "rating": 8.80,
+            "episode": 12,
+            "genre": ["Action", "Comedy", "Shounen"],
+            "sinopsis": "Loid Forge atau Twilight, seorang mata-mata yang bekerja untuk organisasi rahasia. Loid dikenal sebagai salah satu mata-mata yang selalu berhasil menyelesaikan misinya. Suatu hari, Loid diberikan tugas oleh atasannya untuk membentuk sebuah keluarga palsu. \n\nTujuannya yakni guna mendekati Desmon Donovan, Pemimpin dari Partai Nasional. Untuk mewujudkan misi tersebut, Loid mengunjungi Panti Asuhan dan memilih mengadopsi seorang anak perempuan bernama Anya. \n\nSetelah mengadopsi seorang anak, Loid diharuskan mencari seorang istri. Untuk itu, Yor, salah satu wanita yang bekerja di pemerintahaan bersedia membuat keluarga palsu dengan Loid. Sekarang, apakah misi dari Loid akan berhasil?",
+            "isFavorite": true,
+            "imageName": "spy-x-family"
+        },
+        {
+            "id": 2,
+            "title": "Oshi no Ko",
+            "rating": 8.86,
+            "episode": 11,
+            "genre": ["Drama", "Supernatural", "Seinen", "Music"],
+            "sinopsis": "Ai Hoshino, seorang idol muda berusia 16 tahun yang secara mengejutkan hamil di usianya yang terbilang masih muda tersebut. Beruntung baginya, kehamilan ini hanya diketahui oleh seorang dokter sekaligus fans beratnya. \nSang dokter pun berjanji bahwa ia akan membantu Ai hingga masa kelahiran bayinya. Namun suatu hari, sang dokter tiba-tiba meninggal secara misterius. Lebih anehnya lagi, si dokter kembali terlahir sebagai putra dari idol Ai Hoshino.",
+            "isFavorite": false,
+            "imageName": "oshi-no-ko"
+        },
+        {
+            "id": 3,
+            "title": "Death Note",
+            "rating": 8.62,
+            "episode": 37,
+            "genre": ["Mystery", "Police", "Psychological", "Thriller", "Supernatural"],
+            "sinopsis": "Light Yagami, ia merupakan siswa yang terbaik yang sangat jenius. Suatu hari ia menemukan sebuah buku di halaman sekolahnya yang bertuliskan “Death Note” (catatan kematian) yang berasal dari Shinigami (Dewa Kematian) yang memiliki kekuatan untuk membunuh seseorang apabila nama orang tersebut ditulis di dalam buku tersebut.",
+            "isFavorite": false,
+            "imageName": "death-note"
+        },
+        {
+            "id": 4,
+            "title": "Classroom of the Elite",
+            "rating": 8.00,
+            "episode": 12,
+            "genre": ["Drama", "Psychological", "Slice of Life"],
+            "sinopsis": "Welcome to the Classroom of the Elite (Classroom of the Elite) | Berlatar di SMA Koudo Ikusei, sekolah paling bergengsi dengan fasilitas terbaik dan super mewah serta hampir 100% lulusan dari sekolah tersebut dapat dengan mudah diterima disemua Universitas & Perusahaan. \nDisana sistem pengajarannya sedikit berbeda dengan kebanyakan sekolah lainnya, para murid diberikan hak kebebasan yang tinggi seperti berpenampilan dan membawa alat-alat lain kesekolah, mereka juga menggunakan sistem Point untuk menggantikan Uang yang bertujuan untuk bertransaksi, misalnya seperti berbelanja dan lain sebagainya.",
+            "isFavorite": false,
+            "imageName": "cote"
+        },
+        {
+            "id": 5,
+            "title": "Jaku Chara Tomozaki-kun",
+            "rating": 7.23,
+            "episode": 12,
+            "genre": ["Drama", "Romance", "School"],
+            "sinopsis": "Fumiya Tomozaki adalah seorang siswi SMA yang merupakan salah satu gamer terbaik Jepang, namun pada kenyataannya ia sendirian. Dia selalu bersikeras, “Hidup adalah permainan yang mengerikan.” Suatu hari, dia bertemu Aoi Hinami, seorang pahlawan wanita sempurna di sekolah.",
+            "isFavorite": false,
+            "imageName": "jaku-chara-tomozakikun"
+        }
+]
