@@ -10,6 +10,7 @@ import SwiftUI
 struct AnimeList: View {
     @Environment(ModelData.self) var modelData
     @State private var showFavoritesOnly = false
+    @State private var isPresentingAddAnimeSheet = false
         
     var filteredAnimes: [Anime] {
         modelData.animes.filter { anime in
@@ -36,9 +37,20 @@ struct AnimeList: View {
             }
             .animation(.default, value: filteredAnimes)
             .navigationTitle("Anime List")
+            .toolbar {
+                Button(action: {
+                    isPresentingAddAnimeSheet = true
+                }, label: {
+                    Image(systemName: "plus")
+                })
+            }
         } detail: {
             Text("Select a Anime")
         }
+        .sheet(isPresented: $isPresentingAddAnimeSheet) {
+            AddAnimeSheet()
+        }
+        
     }
 }
 

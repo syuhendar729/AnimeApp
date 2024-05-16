@@ -21,6 +21,7 @@
 		948973582BEFC8F70072AA66 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948973572BEFC8F70072AA66 /* MapView.swift */; };
 		9489735A2BF097120072AA66 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948973592BF097120072AA66 /* FavoriteButton.swift */; };
 		948973662BF219090072AA66 /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948973652BF219090072AA66 /* ActionSheet.swift */; };
+		9489737E2BF592590072AA66 /* AddAnimeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9489737D2BF592590072AA66 /* AddAnimeSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		948973572BEFC8F70072AA66 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		948973592BF097120072AA66 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		948973652BF219090072AA66 /* ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheet.swift; sourceTree = "<group>"; };
+		9489737D2BF592590072AA66 /* AddAnimeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimeSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				948973512BEFB1A70072AA66 /* AnimeList.swift */,
 				948973532BEFB3430072AA66 /* AnimeDetail.swift */,
 				948973652BF219090072AA66 /* ActionSheet.swift */,
+				9489737D2BF592590072AA66 /* AddAnimeSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				948973542BEFB3430072AA66 /* AnimeDetail.swift in Sources */,
 				948973582BEFC8F70072AA66 /* MapView.swift in Sources */,
 				948973352BEF31EE0072AA66 /* AnimeApp.swift in Sources */,
+				9489737E2BF592590072AA66 /* AddAnimeSheet.swift in Sources */,
 				948973462BEF4CD10072AA66 /* Anime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
