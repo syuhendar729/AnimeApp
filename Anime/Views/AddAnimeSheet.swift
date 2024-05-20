@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct AddAnimeSheet: View {
+    // MARK: Core Data Variables
+    @EnvironmentObject var manager: CoreDataManager
+    @Environment(\.managedObjectContext) var viewContext
+    
+    @State var anime: AnimeData?
+    @Binding var isPresented: Bool
+    
     @State private var title: String = ""
-    @State private var rating: Float = 0.0
+    @State private var rating: String = ""
     @State private var episode: Int = 0
     @State private var genre: String = ""
     @State private var sinopsis: String = ""
@@ -21,16 +28,29 @@ struct AddAnimeSheet: View {
         NavigationStack {
             Form {
                 Section(header: Text("Anime Info:")) {
-                    TextField("Title", text: $title)
-                    TextField("Genre", text: $genre)
-                    Stepper("Rating: \(rating)", value: $rating)
-
+                    HStack {
+                        Text("Title     :")
+                        TextField("Judul Anime", text: $title)
+                    }
+                    HStack {
+                        Text("Genre  :")
+                        TextField("Genre", text: $genre)
+                    }                    
+                    HStack {
+                        Text("Rating  :")
+                        TextField("Rating", text: $rating)
+                    }
+                    
+                    
                 }
                 
                 Section {
-                    Stepper("Episode: \(episode)", value: $episode)
+                    HStack {
+                        Text("Episode : ")
+                        Stepper("\(episode)", value: $episode)
+                    }
                     DatePicker(
-                        "Realase Date",
+                        "Realase Date : ",
                         selection: $realaseDate,
                         displayedComponents: [.date]
                     )
@@ -39,16 +59,71 @@ struct AddAnimeSheet: View {
                     }
                 }
 
-                Section(header: Text("Sinopsis:")) {
-                    TextField("Sinopsis", text: $sinopsis, axis: .vertical)
-                        .padding(3)
+                Section {
+                    VStack(alignment: .leading) {
+                        Text("Sinopsis : ")
+                        TextField("Blablabla", text: $sinopsis, axis: .vertical)
+                            .padding(3)
+                    }
                         
                 }
+
             }
+            .toolbar {
+                Button(action: {
+                    isPresented = false
+                }, label: {
+                    Text("Cancel")
+                })
+                                    
+                Button(action: {
+                    saveAnime()
+                    isPresented = false
+                }, label: {
+                    Text("Save")
+                })
+                .buttonStyle(.borderedProminent)
+            }
+            .onAppear {
+                if let anime = anime {
+                    self.title = anime.title!
+                    self.genre = anime.genre!
+                    self.rating = anime.rating!
+                    self.episode = Int(anime.episode)
+                    self.realaseDate = anime.realaseDate!
+                    self.isFavorite = anime.isFavorite
+                    self.sinopsis = anime.sinopsis!
+                }
+            }
+
+        }
+       
+    }
+    
+    // MARK: Core Data Operations
+    func saveAnime() {
+        if anime == nil {
+            anime = AnimeData(context: self.viewContext)
+            anime?.id = UUID()
+        }
+        anime?.title = title
+        anime?.genre = genre
+        anime?.rating = rating
+        anime?.episode = Int16(episode)
+        anime?.realaseDate = realaseDate
+        anime?.isFavorite = isFavorite
+        anime?.sinopsis = sinopsis
+        
+        do {
+            try self.viewContext.save()
+            print("Anime saved successfully!")
+        } catch {
+            print("Whoops \\(error.localizedDescription)")
         }
     }
+    
 }
 
 #Preview {
-    AddAnimeSheet()
+    AddAnimeSheet(isPresented: .constant(true))
 }

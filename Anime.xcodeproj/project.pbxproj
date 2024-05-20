@@ -22,6 +22,12 @@
 		9489735A2BF097120072AA66 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948973592BF097120072AA66 /* FavoriteButton.swift */; };
 		948973662BF219090072AA66 /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948973652BF219090072AA66 /* ActionSheet.swift */; };
 		9489737E2BF592590072AA66 /* AddAnimeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9489737D2BF592590072AA66 /* AddAnimeSheet.swift */; };
+		9489738F2BF73BEF0072AA66 /* Anime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9489738D2BF73BEF0072AA66 /* Anime.xcdatamodeld */; };
+		948973922BF745AD0072AA66 /* AnimeData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948973902BF745AD0072AA66 /* AnimeData+CoreDataClass.swift */; };
+		948973932BF745AD0072AA66 /* AnimeData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948973912BF745AD0072AA66 /* AnimeData+CoreDataProperties.swift */; };
+		948973952BF746A80072AA66 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948973942BF746A80072AA66 /* CoreDataManager.swift */; };
+		948973972BF75E4D0072AA66 /* AnimeListCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948973962BF75E4D0072AA66 /* AnimeListCore.swift */; };
+		9489739B2BF770250072AA66 /* AnimeDetailCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9489739A2BF770250072AA66 /* AnimeDetailCore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +47,12 @@
 		948973592BF097120072AA66 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		948973652BF219090072AA66 /* ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheet.swift; sourceTree = "<group>"; };
 		9489737D2BF592590072AA66 /* AddAnimeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimeSheet.swift; sourceTree = "<group>"; };
+		9489738E2BF73BEF0072AA66 /* Anime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Anime.xcdatamodel; sourceTree = "<group>"; };
+		948973902BF745AD0072AA66 /* AnimeData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimeData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		948973912BF745AD0072AA66 /* AnimeData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimeData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		948973942BF746A80072AA66 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		948973962BF75E4D0072AA66 /* AnimeListCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListCore.swift; sourceTree = "<group>"; };
+		9489739A2BF770250072AA66 /* AnimeDetailCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailCore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,8 @@
 		948973282BEF31EE0072AA66 = {
 			isa = PBXGroup;
 			children = (
+				948973902BF745AD0072AA66 /* AnimeData+CoreDataClass.swift */,
+				948973912BF745AD0072AA66 /* AnimeData+CoreDataProperties.swift */,
 				948973332BEF31EE0072AA66 /* Anime */,
 				948973322BEF31EE0072AA66 /* Products */,
 			);
@@ -80,6 +94,7 @@
 				948973342BEF31EE0072AA66 /* AnimeApp.swift */,
 				948973382BEF31F00072AA66 /* Assets.xcassets */,
 				9489733A2BEF31F00072AA66 /* Preview Content */,
+				9489738D2BF73BEF0072AA66 /* Anime.xcdatamodeld */,
 			);
 			path = Anime;
 			sourceTree = "<group>";
@@ -101,6 +116,8 @@
 				948973532BEFB3430072AA66 /* AnimeDetail.swift */,
 				948973652BF219090072AA66 /* ActionSheet.swift */,
 				9489737D2BF592590072AA66 /* AddAnimeSheet.swift */,
+				948973962BF75E4D0072AA66 /* AnimeListCore.swift */,
+				9489739A2BF770250072AA66 /* AnimeDetailCore.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +127,7 @@
 			children = (
 				948973452BEF4CD10072AA66 /* Anime.swift */,
 				948973472BEF56390072AA66 /* ModelData.swift */,
+				948973942BF746A80072AA66 /* CoreDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,11 +227,17 @@
 				948973372BEF31EE0072AA66 /* ContentView.swift in Sources */,
 				9489735A2BF097120072AA66 /* FavoriteButton.swift in Sources */,
 				948973482BEF56390072AA66 /* ModelData.swift in Sources */,
+				9489739B2BF770250072AA66 /* AnimeDetailCore.swift in Sources */,
+				948973972BF75E4D0072AA66 /* AnimeListCore.swift in Sources */,
 				9489734A2BEF56A30072AA66 /* AnimeRow.swift in Sources */,
 				948973542BEFB3430072AA66 /* AnimeDetail.swift in Sources */,
+				948973922BF745AD0072AA66 /* AnimeData+CoreDataClass.swift in Sources */,
+				948973932BF745AD0072AA66 /* AnimeData+CoreDataProperties.swift in Sources */,
 				948973582BEFC8F70072AA66 /* MapView.swift in Sources */,
 				948973352BEF31EE0072AA66 /* AnimeApp.swift in Sources */,
+				9489738F2BF73BEF0072AA66 /* Anime.xcdatamodeld in Sources */,
 				9489737E2BF592590072AA66 /* AddAnimeSheet.swift in Sources */,
+				948973952BF746A80072AA66 /* CoreDataManager.swift in Sources */,
 				948973462BEF4CD10072AA66 /* Anime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +442,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9489738D2BF73BEF0072AA66 /* Anime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9489738E2BF73BEF0072AA66 /* Anime.xcdatamodel */,
+			);
+			currentVersion = 9489738E2BF73BEF0072AA66 /* Anime.xcdatamodel */;
+			name = Anime.xcdatamodeld;
+			path = "/Users/syuhadarantisi/MyProgram/learn-SwiftUI/Anime/Anime/Anime.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 948973292BEF31EE0072AA66 /* Project object */;
 }

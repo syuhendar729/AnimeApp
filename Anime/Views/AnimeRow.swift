@@ -22,6 +22,7 @@ struct AnimeRow: View {
             }
         }
     }
+    
 }
 
 #Preview {

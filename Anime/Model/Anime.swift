@@ -23,3 +23,20 @@ struct Anime: Hashable, Codable {
     }
 }
 
+struct AnimeDummy: Hashable, Codable {
+    let title: String?
+    let rating: String?
+    let episode: Int
+    let genre: String?
+    let sinopsis: String?
+    let isFavorite: Bool
+    let realaseDate: Date?
+}
+
+// Sample Data
+let animesSampleData = [
+    AnimeDummy(title: "Judul Anime 1", rating: "8.0", episode: 12, genre: "Drama, Romance", sinopsis: "Menceritakan seseorang yang blablablabla", isFavorite: false, realaseDate: Date()),
+    AnimeDummy(title: "Judul Anime 2", rating: "8.0", episode: 12, genre: "Drama, Romance", sinopsis: "Menceritakan seseorang yang blablablabla", isFavorite: false, realaseDate: Date()),
+    AnimeDummy(title: "Judul Anime 3", rating: "8.0", episode: 12, genre: "Drama, Romance", sinopsis: "Menceritakan seseorang yang blablablabla", isFavorite: true, realaseDate: Date()),
+    AnimeDummy(title: "Judul Anime 4", rating: "8.0", episode: 12, genre: "Drama, Romance", sinopsis: "Menceritakan seseorang yang blablablabla", isFavorite: true, realaseDate: Date())
+]

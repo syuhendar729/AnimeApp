@@ -14,9 +14,9 @@ struct ContentView: View {
                 .tabItem {
                     Label("Anime List", systemImage: "play.house")
                 }
-            AnimeList()
+            AnimeListCore()
                 .tabItem {
-                    Label("About App", systemImage: "person")
+                    Label("Anime List Core", systemImage: "person")
                 }
         }
     }
